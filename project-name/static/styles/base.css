@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* 
+$background: #0D1017;
+$foreground: #FFFFFF;
+
+$orange: #FFB454;
+$blue: #59C2FF;
+$green: #7FD962;
+$turqoise: #95E6CB;
+$pink: #F07178;
+$purple: #d2a6ff;
+$red: #D95757;
+$yellow: #E6B450;
+
+$primary: #409FFF21;
+$secondary: #409FFF4D;
+
+$neutral: #6186aa; */
+
+:root {
+    /* --background: #12151C;
+    --text: white;
+
+    --accent: #95E6CB;
+    --accent-2: #73D0FF;
+
+    --primary: #409FFF21;
+    --secondary: #409FFF40;
+    --tertiary: #17191f; */
+    --background: #0D1017;
+    --text: #FFFFFF;
+
+    --accent: #95E6CB;
+    --accent-2: #73D0FF;
+
+    --primary: #409FFF21;
+    --secondary: #409FFF4D;
+    --tertiary: #17191f;
+    --neutral: #6186aa;
+
+    --orange: #FFB454;
+    --blue: #59C2FF;
+    --green: #7FD962;
+    --turqoise: #95E6CB;
+    --pink: #F07178;
+    --purple: #d2a6ff;
+    --red: #D95757;
+    --yellow: #E6B450;
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+
+    overflow-x: hidden;
+}
+
+* {
+    font-family: inherit;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-2);
+    font-weight: 500;
+}
+
+button {
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+
+    &.primary {
+        background-color: transparent;
+        /* box-shadow: 0 0.7rem 0.5rem -0.3rem rgba(149, 230, 203, 0.5); */
+        color: var(--text);
+        border: 0.1rem solid var(--accent);
+
+        padding: 1rem;
+        font-weight: 800;
+        font-size: 1rem;
+
+        transition: transform 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.1s ease-in-out, 0.5s ease-in-out;
+
+        &:hover {
+            background-color: var(--accent);
+            transform: translate(0, -0.5rem);
+            color: var(--background);
+            box-shadow: 0 0.8rem 0.5rem -0.3rem rgba(149, 230, 203, 0.5);
+
+        }
+    }
+}
